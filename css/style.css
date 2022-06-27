@@ -1,0 +1,19 @@
+.box_container{
+    width: 50%;
+    margin: 0 auto;
+    
+}
+.my_corousel{
+    object-fit: cover;
+    height: 380px;
+}
+.mini_img{
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    filter: grayscale(100%);
+    margin-right: 3px;
+}
+.img_visibility{
+    filter: grayscale(0);
+}
