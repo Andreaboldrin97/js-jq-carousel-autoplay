@@ -63,6 +63,9 @@ let images = [
     //!prendo il btn previus
     let btnPrevius=document.querySelector(`.btn_previus`);
 
+    //!prendo il btn stop
+    let btnstop=document.querySelector(`.btn_stop`);
+
     //!quando il btnNext viene clicato fai partire la funzione 
     btnNext.addEventListener(`click` , function(){
 
@@ -87,6 +90,8 @@ let images = [
         imgList[activeElement].classList.add('active');
          //*{dalla variabile di partenza rimuovo la classe img_visibility }
          imgListBox[activeElement].classList.add('img_visibility');
+
+         clearInterval(clock);
 
        
 
@@ -118,10 +123,13 @@ let images = [
         //*{dalla variabile di partenza rimuovo la classe img_visibility }
         imgListBox[activeElement].classList.add('img_visibility');
 
+        clearInterval(clock);
+
 
         console.log(activeElement);
 
     })
+
 
 
 
